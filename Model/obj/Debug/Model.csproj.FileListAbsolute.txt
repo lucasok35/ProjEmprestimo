@@ -1,0 +1,6 @@
+C:\Users\Dante\source\repos\ProjEmprestimo\Model\bin\Debug\Model.dll
+C:\Users\Dante\source\repos\ProjEmprestimo\Model\bin\Debug\Model.pdb
+C:\Users\Dante\source\repos\ProjEmprestimo\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\Dante\source\repos\ProjEmprestimo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Dante\source\repos\ProjEmprestimo\Model\obj\Debug\Model.dll
+C:\Users\Dante\source\repos\ProjEmprestimo\Model\obj\Debug\Model.pdb
