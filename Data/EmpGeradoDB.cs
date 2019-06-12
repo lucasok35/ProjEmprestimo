@@ -19,8 +19,8 @@ namespace Data
             try
             {
                 //Query de inclusão de dados
-                string sql = string.Format("insert into TB_EmpGerado values ('{0}', '{1}', '{2}')",
-                    empgerado.Parcela, empgerado.VencParcela, empgerado.IdEmprestimo);
+                string sql = string.Format("insert into TB_EmpGerado(IdEmprestimo, Parcela, DataVencimento) values ('{0}', '{1}', '{2}', '{3}')",
+                    empgerado.Emprestimo.IdEmprestimo, empgerado.Parcela, empgerado.VencParcela);
 
                 //Abrir conexão para inclusão das informações
                 using (conexao = new Conexao())
@@ -43,7 +43,8 @@ namespace Data
         {
             using (conexao = new Conexao())
             {
-                var sql = "SELECT IdEmprestimo, Parcela, VencParcela FROM TB_EmpGerado";
+                var sql = "SELECT G.IdEmpGerado, G.Parcela, G.VencParcela " +
+                    "FROM TB_EmpGerado G, TB_Emprestimo E WHERE G.IdEmprestimo = E.IdEmprestimo";
                 var retorno = conexao.ExecutaComandoRetorno(sql);
                 return TransformaSQLReaderEmList(retorno);
             }
@@ -57,9 +58,10 @@ namespace Data
             {
                 var item = new EmpGerado()
                 {
-                    IdEmpGerado = int.Parse(retorno["IdEmpGerado"].ToString()),
-                    Parcela = int.Parse(retorno["Parcela"].ToString()),
-                    VencParcela = Convert.ToDateTime(retorno["VencParcela"].ToString()),
+                    IdEmpGerado = Convert.ToInt32(retorno["IdEmpGerado"].ToString()),
+                    Emprestimo = new Emprestimo() { IdEmprestimo = Convert.ToInt32(retorno["IdEmprestimo"]) },
+                    Parcela = Convert.ToInt32(retorno["Parcela"].ToString()),
+                    VencParcela = Convert.ToDateTime(retorno["VencParcela"].ToString()),                    
 
                 };
 

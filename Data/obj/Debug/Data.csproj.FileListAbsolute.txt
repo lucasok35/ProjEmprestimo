@@ -1,0 +1,11 @@
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\bin\Debug\Data.dll
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\bin\Debug\Data.pdb
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\bin\Debug\Model.dll
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\bin\Debug\Utils.dll
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\bin\Debug\Model.pdb
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\bin\Debug\Utils.pdb
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\obj\Debug\Data.dll
+C:\Users\Dante\source\repos\ProjEmprestimo\Data\obj\Debug\Data.pdb

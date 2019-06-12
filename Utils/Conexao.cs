@@ -20,16 +20,17 @@ namespace Utils
         }
 
 
-        public void ExecutaComando(string query)
+        public int ExecutaComando(string query)
         {
-
+            //(executenoquery alterado para executeScalar)
             var cmd = new SqlCommand
             {
                 CommandText = query,
                 CommandType = CommandType.Text,
                 Connection = conexao
             };
-            cmd.ExecuteNonQuery();
+            return (int) cmd.ExecuteScalar();
+
         }
 
         public SqlDataReader ExecutaComandoRetorno(string query)

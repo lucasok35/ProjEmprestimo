@@ -11,7 +11,7 @@ namespace Model
 
         #region Propriedades
         public int IdEmpGerado { get; set; }
-        public Emprestimo IdEmprestimo { get; set; }
+        public Emprestimo Emprestimo { get; set; }
         public decimal Parcela { get; set; }
         public DateTime VencParcela { get; set; }
         #endregion Propriedades

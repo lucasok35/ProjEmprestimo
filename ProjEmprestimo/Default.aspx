@@ -40,7 +40,7 @@
         <br />
         <asp:Label ID="lblMsg" runat="server"></asp:Label>
         <br />
-        <asp:GridView ID="gvEmprestimo" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="347px">
+        <asp:GridView ID="gvEmprestimo" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="347px" OnSelectedIndexChanged="gvEmprestimo_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
